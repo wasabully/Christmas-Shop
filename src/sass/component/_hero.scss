@@ -1,0 +1,65 @@
+@use '../base/typography';
+@use '../utils/var' as *;
+
+.hero-section {
+	background-color: $color-primary;
+	position: relative;
+	background-position: center;
+	height: 524px;
+}
+.hero-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+	height: 100%;
+	gap: 12px;
+
+	.caption {
+		@extend %caption;
+		position: relative;
+		z-index: 3;
+		text-align: center;
+		color: $color-static-white;
+		z-index: 3;
+	}
+	h1 {
+		white-space: normal;
+		width: 30%;
+		z-index: 3;
+	}
+
+	.hero-action {
+		font-family: 'Montserrat', sans-serif;
+		font-size: 12px;
+		font-weight: 600;
+		line-height: 130%;
+		letter-spacing: 5%;
+		text-transform: uppercase;
+		text-decoration: none;
+		color: $color-static-white;
+		white-space: nowrap;
+		font-style: normal;
+	}
+}
+
+.bg-snow {
+	z-index: 1;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 100%;
+	height: 100%;
+}
+
+.bg-ball {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 2;
+	width: 100%;
+	height: 100%;
+}

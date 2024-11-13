@@ -1,7 +1,9 @@
 @use './layout/header';
 @use './base/typography';
+@use './base/buttons';
 @use './layout/container';
 @use './base/base';
 @use './component/nav';
 @use './utils/var' as *;
+@use './component/hero';
 @import './normalize.css';

@@ -49,6 +49,15 @@ p {
   font-style: normal;
 }
 
+.hero-container .caption {
+  font-family: "Allura", cursive;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 100%;
+  letter-spacing: 5%;
+  font-style: normal;
+}
+
 .action-small {
   font-family: "Montserrat", sans-serif;
   font-size: 12px;
@@ -100,6 +109,38 @@ p {
   margin-top: 12px;
   margin-left: 82px;
   margin-bottom: 12px;
+}
+
+.button {
+  margin: 0 0 15px 0;
+}
+
+.btn {
+  background-color: #181c29;
+  color: #ffffff;
+  padding: 20px 32px;
+  border: none;
+  border-radius: 20px;
+  text-transform: uppercase;
+  font-family: "Montserrat";
+  font-size: 1.2rem;
+  font-weight: 600;
+  line-height: 130%;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  z-index: 3;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+.btn:hover {
+  background-color: #ffffff;
+}
+.btn:hover .link {
+  color: #181c29;
+}
+
+.link {
+  color: #ffffff;
+  transition: color 0.3s ease;
 }
 
 .container {
@@ -160,6 +201,67 @@ p {
   font-weight: 600;
   letter-spacing: 0.1rem;
   transition: 0.5s ease-in-out;
+}
+
+.hero-section {
+  background-color: #ff4646;
+  position: relative;
+  background-position: center;
+  height: 524px;
+}
+
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  height: 100%;
+  gap: 12px;
+}
+.hero-container .caption {
+  position: relative;
+  z-index: 3;
+  text-align: center;
+  color: #ffffff;
+  z-index: 3;
+}
+.hero-container h1 {
+  white-space: normal;
+  width: 30%;
+  z-index: 3;
+}
+.hero-container .hero-action {
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 130%;
+  letter-spacing: 5%;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #ffffff;
+  white-space: nowrap;
+  font-style: normal;
+}
+
+.bg-snow {
+  z-index: 1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+}
+
+.bg-ball {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 100%;
+  height: 100%;
 }
 
 /*# sourceMappingURL=main.css.map */

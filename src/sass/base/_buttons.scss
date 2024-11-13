@@ -1,0 +1,35 @@
+@use '../utils/var' as *;
+
+.button {
+	margin: 0 0 15px 0;
+}
+
+.btn {
+	background-color: $color-dark;
+	color: $color-static-white;
+	padding: 20px 32px;
+	border: none;
+	border-radius: 20px;
+	text-transform: uppercase;
+	font-family: 'Montserrat';
+	font-size: 1.2rem;
+	font-weight: 600;
+	line-height: 130%;
+	letter-spacing: 0.5px;
+	cursor: pointer;
+	z-index: 3;
+	transition: background-color 0.3s ease, color 0.3s ease;
+
+	&:hover {
+		background-color: $color-static-white;
+
+		.link {
+			color: $color-dark;
+		}
+	}
+}
+
+.link {
+	color: $color-static-white;
+	transition: color 0.3s ease;
+}
