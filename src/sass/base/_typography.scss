@@ -1,0 +1,82 @@
+@use '../utils/var' as *;
+
+h1 {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 32px;
+	font-weight: 600;
+	line-height: 152%;
+	letter-spacing: 0.18em;
+	text-transform: uppercase;
+	text-align: center;
+	color: $color-static-white;
+	font-style: normal;
+}
+
+h2 {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 24px;
+	font-weight: 600;
+	line-height: 152%;
+	letter-spacing: 16%;
+	text-transform: uppercase;
+	font-style: normal;
+}
+
+h3 {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 16px;
+	font-weight: 600;
+	line-height: 152%;
+	letter-spacing: 8%;
+	text-transform: uppercase;
+	font-style: normal;
+}
+
+h4 {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 12px;
+	font-weight: 600;
+	line-height: 130%;
+	letter-spacing: 5%;
+	text-transform: uppercase;
+	font-style: normal;
+}
+p {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 148%;
+	font-style: normal;
+}
+
+%caption {
+	font-family: 'Allura', cursive;
+	font-size: 24px;
+	font-weight: 400;
+	line-height: 100%;
+	letter-spacing: 5%;
+	font-style: normal;
+}
+
+.action-small {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 12px;
+	font-weight: 600;
+	line-height: 130%;
+	letter-spacing: 5%;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: $color-dark;
+	white-space: nowrap;
+	font-style: normal;
+}
+
+.action-large {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 24px;
+	font-weight: 600;
+	line-height: 152%;
+	letter-spacing: 16%;
+	text-transform: uppercase;
+	font-style: normal;
+}

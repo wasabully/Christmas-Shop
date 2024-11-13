@@ -1,0 +1,33 @@
+@use '../base/_typography.scss';
+
+@use '../utils/var' as *;
+
+.header {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	background-color: $color-content-background;
+}
+
+.header-nav {
+	display: flex;
+	flex-direction: row;
+	justify-items: center;
+	align-items: center;
+	gap: 28px;
+	margin-top: 12px;
+	margin-bottom: 12px;
+	margin-right: 82px;
+}
+
+.logo {
+	display: flex;
+	flex-direction: row;
+	justify-items: center;
+	align-content: center;
+	align-items: center;
+	gap: 8px;
+	margin-top: 12px;
+	margin-left: 82px;
+	margin-bottom: 12px;
+}

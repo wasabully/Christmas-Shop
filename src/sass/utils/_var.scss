@@ -1,0 +1,21 @@
+// Цвета
+
+$color-primary: #ff4646;
+$color-static-white: #ffffff;
+$color-tag-purple: #4361ff;
+$color-content-background: #ecf3f8;
+$color-tag-pink: #ff43f7;
+$color-overlay: #181c29;
+$color-dark: #181c29;
+$color-tag-green: #06a44f;
+
+// Размер контейнера
+$container-width: 1440px;
+
+// Шрифт
+$mainFontSize: 18px !default;
+
+$color-primary-10: rgba($color-primary, 0.1);
+$color-static-white-20: rgba($color-static-white, 0.2);
+$color-static-white-40: rgba($color-static-white, 0.4);
+$overlay: rgba($color-dark, 0.8);
