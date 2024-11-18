@@ -83,46 +83,51 @@ p {
 
 .header {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
-  background-color: #ecf3f8;
-}
-
-.header-nav {
-  display: flex;
-  flex-direction: row;
-  justify-items: center;
   align-items: center;
-  gap: 28px;
-  margin-top: 12px;
-  margin-bottom: 12px;
-  margin-right: 82px;
+  background-color: #ecf3f8;
+  padding: 12px 82px;
 }
 
 .logo {
   display: flex;
-  flex-direction: row;
-  justify-items: center;
-  align-content: center;
   align-items: center;
   gap: 8px;
-  margin-top: 12px;
-  margin-left: 82px;
-  margin-bottom: 12px;
 }
 
-.sect {
-  margin-top: 80px;
-  width: 500px;
-  height: 200px;
-  font-family: Montserrat;
-  font-size: 32px;
-  font-weight: 600;
-  line-height: 48px;
-  letter-spacing: 0.18em;
-  text-align: center;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
+.the__gifts {
+  width: 141px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+
+.header__item {
+  width: 88px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+.header__item:hover {
+  background: rgba(255, 70, 70, 0.1);
+  color: #ff4646;
+}
+.header__item .header__link {
+  text-decoration: none;
+  border: none;
+}
+.header__item .header__link:hover {
+  color: #ff4646;
 }
 
 .button {
