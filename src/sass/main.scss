@@ -5,6 +5,7 @@
 @use './base/base';
 @use './component/nav';
 @use './utils/var' as *;
+@use './utils/mixins';
 @use './component/hero';
 @use './component/about';
 @import './normalize.css';
