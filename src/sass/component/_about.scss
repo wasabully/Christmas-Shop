@@ -46,12 +46,12 @@
 .about-image {
 	@include center-content;
 	flex: 1;
-
-	img {
-		width: 628px;
-		height: 528px;
-		border-radius: 20px;
-		box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-		object-fit: cover;
-	}
+	width: 628px;
+	height: 528px;
+	background-image: url('../../../src/img/about/santa.png');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	border-radius: 20px;
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
