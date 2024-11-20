@@ -58,13 +58,6 @@ h4 {
   font-style: normal;
 }
 
-.slider-text {
-  font-family: Montserrat;
-  font-size: 80px;
-  font-weight: 600;
-  text-transform: uppercase;
-}
-
 .action-small {
   font-family: "Montserrat", sans-serif;
   font-size: 12px;
@@ -364,33 +357,24 @@ p {
 }
 
 .slider-section {
+  padding: 80px 0px;
   background-image: url("../../../src/img/hero/bg-snow.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   background-color: #ff4646;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 50px;
-  margin: 0 auto;
-}
-
-.slider-container {
-  width: 100%;
-  max-width: 1276px;
-  height: 368px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  position: relative;
 }
 
 .slider-t {
-  width: 426px;
-  height: 72px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   text-align: center;
+  align-items: center;
+}
+
+.slider-text {
+  margin-bottom: 20px;
   color: #ffffff;
 }
 
@@ -398,18 +382,42 @@ p {
   color: #ffffff;
 }
 
-.slider {
-  width: 1440px;
-  height: 200px;
-  display: flex;
-  align-items: center;
-  justify-content: end;
-  gap: 15px;
+.slider-content {
   overflow: hidden;
+  transition: transform 0.5s ease-in-out;
 }
 
-.slider-text {
-  color: #ffffff;
+.slider-gallery {
+  max-width: 1260px;
+  width: 100%;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: row;
+  padding: 0 0 0 6%;
+  gap: 0 25px;
+  transition: transform 0.5s ease-in-out;
+}
+
+.gallery-item {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  align-items: center;
+  gap: 25px;
+}
+
+.gallery-title {
+  font-family: "Montserrat";
+  font-size: 8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: white;
+}
+
+.gallery-img {
+  width: 200px;
+  height: 200px;
+  border-radius: 20px;
 }
 
 /*# sourceMappingURL=main.css.map */
