@@ -49,13 +49,20 @@ h4 {
   font-style: normal;
 }
 
-.about-text .about-caption, .hero-caption {
+.slider-caption, .about-text .about-caption, .hero-caption {
   font-family: "Allura", cursive;
   font-size: 24px;
   font-weight: 400;
   line-height: 100%;
   letter-spacing: 5%;
   font-style: normal;
+}
+
+.slider-text {
+  font-family: Montserrat;
+  font-size: 80px;
+  font-weight: 600;
+  text-transform: uppercase;
 }
 
 .action-small {
@@ -354,6 +361,55 @@ p {
   background-repeat: no-repeat;
   border-radius: 20px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.slider-section {
+  background-image: url("../../../src/img/hero/bg-snow.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #ff4646;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  margin: 0 auto;
+}
+
+.slider-container {
+  width: 100%;
+  max-width: 1276px;
+  height: 368px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.slider-t {
+  width: 426px;
+  height: 72px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.slider-caption {
+  color: #ffffff;
+}
+
+.slider {
+  width: 1440px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 15px;
+  overflow: hidden;
+}
+
+.slider-text {
+  color: #ffffff;
 }
 
 /*# sourceMappingURL=main.css.map */

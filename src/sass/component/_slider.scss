@@ -1,0 +1,53 @@
+@use '../base/_typography.scss';
+@use '../utils/var' as *;
+
+.slider-section {
+	background-image: url('../../../src/img/hero/bg-snow.png');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-color: $color-primary;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 50px;
+	margin: 0 auto;
+}
+
+.slider-container {
+	width: 100%;
+	max-width: 1276px;
+	height: 368px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+}
+
+.slider-t {
+	width: 426px;
+	height: 72px;
+	text-align: center;
+	color: $color-static-white;
+}
+
+.slider-caption {
+	@extend %caption;
+	color: $color-static-white;
+}
+
+.slider {
+	width: 1440px;
+	height: 200px;
+	display: flex;
+	align-items: center;
+	justify-content: end;
+	gap: 15px;
+	overflow: hidden;
+}
+
+.slider-text {
+	@extend %slider-text;
+	color: $color-static-white;
+}
