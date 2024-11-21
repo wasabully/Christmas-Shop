@@ -21,7 +21,7 @@
   font-style: normal;
 }
 
-h3 {
+.Header3 {
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
   font-weight: 600;
@@ -31,7 +31,7 @@ h3 {
   font-style: normal;
 }
 
-h4 {
+.Header4 {
   font-family: "Montserrat", sans-serif;
   font-size: 12px;
   font-weight: 600;
@@ -444,6 +444,68 @@ p {
 }
 .control-btn:hover {
   background-color: hsla(180, 13%, 92%, 0.951);
+}
+
+.best-gifts-section {
+  padding: 80px 0;
+  background-image: url("../../../src/img/hero/bg-snow.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #ff4646;
+}
+
+.best-gifts-content {
+  max-width: 1276px;
+  height: 342px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 10px;
+  transition: transform 0.5s ease-in-out;
+}
+
+.card {
+  background-color: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.card .card-img {
+  width: 310px;
+  height: 230px;
+  border-radius: 50%;
+}
+.card .card-text {
+  width: 310px;
+  height: 230px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  background-color: #ffffff;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+.card .card-text.work h4 {
+  color: #4361ff;
+}
+.card .card-text.health h4 {
+  color: #06a44f;
+}
+.card .card-text.harmony h4 {
+  color: #ff43f7;
+}
+
+.card-text h3 {
+  height: 40px;
+  overflow-wrap: break-word;
+  line-height: 1.2;
 }
 
 /*# sourceMappingURL=main.css.map */
