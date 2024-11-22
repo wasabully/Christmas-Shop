@@ -508,4 +508,72 @@ p {
   line-height: 1.2;
 }
 
+.f-section {
+  padding: 80px 0;
+  background-image: url("../../../src/img/cta/for.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #ff4646;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.f-section .f-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 1276px;
+  height: 548px;
+  text-align: center;
+  position: relative;
+  color: white;
+  background-image: url("../../../src/img/hero/bg-snow.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.f-section .f-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  width: 426px;
+  height: 428px;
+}
+.f-section .f-text .hero-caption {
+  font-size: 20px;
+  color: #ffe6e6;
+  font-style: italic;
+}
+.f-section .countdown {
+  display: flex;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 15px 20px;
+  border-radius: 25px;
+}
+.f-section .countdown .countdown-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px 20px;
+  border-radius: 10px;
+  color: #ff4646;
+}
+.f-section .countdown .countdown-item .number {
+  font-size: 36px;
+  font-weight: bold;
+  color: #ffffff;
+}
+.f-section .countdown .countdown-item .label {
+  font-size: 14px;
+  text-transform: uppercase;
+  margin-top: 5px;
+  color: #ffffff;
+}
+
 /*# sourceMappingURL=main.css.map */

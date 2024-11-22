@@ -1,0 +1,78 @@
+@use '../base/_typography.scss';
+@use '../utils/var' as *;
+.f-section {
+	padding: 80px 0;
+	background-image: url('../../../src/img/cta/for.png');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-color: $color-primary;
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	.f-content {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		width: 1276px;
+		height: 548px;
+		text-align: center;
+		position: relative;
+		color: white;
+		background-image: url('../../../src/img/hero/bg-snow.png');
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+	}
+
+	.f-text {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		gap: 20px;
+
+		width: 426px;
+		height: 428px;
+
+		.hero-caption {
+			font-size: 20px;
+			color: #ffe6e6;
+			font-style: italic;
+		}
+	}
+
+	.countdown {
+		display: flex;
+		justify-content: center;
+		background-color: rgba(255, 255, 255, 0.2);
+		padding: 15px 20px;
+		border-radius: 25px;
+
+		.countdown-item {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+
+			padding: 15px 20px;
+			border-radius: 10px;
+			color: $color-primary;
+
+			.number {
+				font-size: 36px;
+				font-weight: bold;
+				color: $color-static-white;
+			}
+
+			.label {
+				font-size: 14px;
+				text-transform: uppercase;
+				margin-top: 5px;
+				color: $color-static-white;
+			}
+		}
+	}
+}
