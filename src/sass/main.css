@@ -519,6 +519,7 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 .f-section .f-content {
   display: flex;
