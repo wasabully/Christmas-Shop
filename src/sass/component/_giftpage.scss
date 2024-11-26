@@ -1,0 +1,95 @@
+@use '../base/_typography.scss';
+@use '../utils/var' as *;
+
+.gifts-section {
+	padding: 80px 0;
+	background-image: url('src/../../img/best-gifts/bg-garland.png');
+	background-repeat: no-repeat;
+	background-color: $color-primary;
+}
+.health-block {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.health-block-header {
+	width: 226px;
+	padding: 20px;
+	color: $color-static-white;
+	text-align: center;
+}
+
+.gifts-content {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 10px;
+	justify-items: center;
+	max-width: 1276px;
+	margin: 0 auto;
+}
+
+.card-gifts {
+	width: 310px;
+	background-color: $color-static-white;
+	border-radius: 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	overflow: hidden;
+
+	.card-gifts-img {
+		width: 310px;
+		height: 230px;
+		border-radius: 50%;
+	}
+
+	.card-gifts-text {
+		width: 310px;
+		height: 112px;
+		border-radius: 20px;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		justify-content: space-evenly;
+		background-color: $color-static-white;
+		padding: 0 20px;
+		box-sizing: border-box;
+
+		&.work h4 {
+			color: $color-work;
+		}
+
+		&.health h4 {
+			color: $color-health;
+		}
+
+		&.harmony h4 {
+			color: $color-harmony;
+		}
+	}
+}
+.filter-buttons {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	margin: 20px 0;
+}
+
+.filter-button {
+	display: inline-block;
+	padding: 10px 20px;
+	background-color: transparent;
+	color: $color-static-white;
+	text-align: center;
+	text-decoration: none;
+	border-radius: 12px;
+	transition: color 0.3s ease, transform 0.3s ease;
+	cursor: pointer;
+}
+
+.filter-button:hover {
+	background-color: $color-static-white-20;
+	transform: scale(1.05);
+}
