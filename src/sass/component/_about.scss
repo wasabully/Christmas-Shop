@@ -33,6 +33,10 @@
 		gap: 20px;
 		overflow-x: auto;
 	}
+
+	@media screen and (max-width: 380px) {
+		flex-direction: column;
+	}
 }
 
 .text-container {
@@ -46,6 +50,12 @@
 		text-align: start;
 		padding: 40px;
 	}
+	@media screen and (max-width: 380px) {
+		width: 100%;
+		height: auto;
+		text-align: center;
+		padding: 20px;
+	}
 }
 
 .about-text {
@@ -58,6 +68,9 @@
 	.about-caption {
 		@extend %caption;
 		color: $color-primary;
+	}
+	@media screen and (max-width: 380px) {
+		width: 100%;
 	}
 }
 
@@ -75,5 +88,10 @@
 	@media screen and (max-width: 768px) {
 		width: 50%;
 		height: auto;
+	}
+	@media screen and (max-width: 380px) {
+		width: 100%;
+		height: auto;
+		border-radius: 10px;
 	}
 }

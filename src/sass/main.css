@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @import './normalize.css';
 .Header1 {
   font-family: "Montserrat", sans-serif;
@@ -394,6 +393,11 @@ p {
     overflow-x: auto;
   }
 }
+@media screen and (max-width: 380px) {
+  .about-container {
+    flex-direction: column;
+  }
+}
 
 .text-container {
   display: flex;
@@ -410,6 +414,14 @@ p {
     padding: 40px;
   }
 }
+@media screen and (max-width: 380px) {
+  .text-container {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    padding: 20px;
+  }
+}
 
 .about-text {
   width: 426px;
@@ -420,6 +432,11 @@ p {
 }
 .about-text .about-caption {
   color: #ff4646;
+}
+@media screen and (max-width: 380px) {
+  .about-text {
+    width: 100%;
+  }
 }
 
 .about-image {
@@ -441,6 +458,13 @@ p {
     height: auto;
   }
 }
+@media screen and (max-width: 380px) {
+  .about-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+}
 
 .slider-section {
   padding: 80px 0px;
@@ -455,6 +479,11 @@ p {
     padding: 40px 20px;
   }
 }
+@media screen and (max-width: 380px) {
+  .slider-section {
+    padding: 30px 15px;
+  }
+}
 
 .slider-t {
   display: flex;
@@ -463,6 +492,11 @@ p {
   text-align: center;
   align-items: center;
   gap: 10px;
+}
+@media screen and (max-width: 380px) {
+  .slider-t {
+    gap: 5px;
+  }
 }
 
 .slider-text {
@@ -481,6 +515,11 @@ p {
 @media screen and (max-width: 768px) {
   .slider-content {
     padding: 0;
+  }
+}
+@media screen and (max-width: 380px) {
+  .slider-content {
+    padding: 0 5px;
   }
 }
 
@@ -569,6 +608,11 @@ p {
   background-color: #ff4646;
   padding: 65px;
 }
+@media screen and (max-width: 380px) {
+  .best-gifts-section {
+    padding: 40px 40px;
+  }
+}
 
 .best-gifts-content {
   max-width: 1276px;
@@ -584,7 +628,13 @@ p {
   .best-gifts-content {
     flex-wrap: wrap;
     justify-content: center;
-    gap: 15px;
+  }
+}
+@media screen and (max-width: 380px) {
+  .best-gifts-content {
+    flex-direction: column;
+    width: 100%;
+    padding: 0;
   }
 }
 
@@ -649,6 +699,11 @@ p {
     flex-direction: column;
   }
 }
+@media screen and (max-width: 380px) {
+  .f-section {
+    padding: 30px 10px;
+  }
+}
 .f-section .f-content {
   display: flex;
   justify-content: center;
@@ -670,6 +725,13 @@ p {
     max-width: 100%;
   }
 }
+@media screen and (max-width: 380px) {
+  .f-section .f-content {
+    height: auto;
+    padding: 15px;
+    width: 100%;
+  }
+}
 .f-section .f-text {
   display: flex;
   flex-direction: column;
@@ -683,6 +745,18 @@ p {
   font-size: 20px;
   color: #ffe6e6;
   font-style: italic;
+}
+@media screen and (max-width: 768px) {
+  .f-section .f-text {
+    width: 100%;
+    gap: 15px;
+  }
+}
+@media screen and (max-width: 380px) {
+  .f-section .f-text {
+    width: 100%;
+    height: auto;
+  }
 }
 .f-section .countdown {
   display: flex;
@@ -729,9 +803,15 @@ p {
 }
 @media screen and (max-width: 768px) {
   .footer .footer-contacts {
-    flex-direction: column; /* Переводим карточки в колонку */
-    width: 100%; /* Растягиваем на всю ширину */
-    gap: 20px; /* Увеличиваем промежутки между карточками */
+    flex-direction: column;
+    width: 100%;
+    gap: 20px;
+  }
+}
+@media screen and (max-width: 380px) {
+  .footer .footer-contacts {
+    width: 100%;
+    padding: 10px 0;
   }
 }
 .footer .footer-contacts .footer-contact {
@@ -750,6 +830,12 @@ p {
   .footer .footer-contacts .footer-contact {
     width: 100%;
     border-radius: 20px;
+  }
+}
+@media screen and (max-width: 380px) {
+  .footer .footer-contacts .footer-contact {
+    width: 100%;
+    padding: 15px 10px;
   }
 }
 .footer .footer-contacts .footer-contact .footer-icon {
@@ -783,6 +869,11 @@ p {
     background-size: 100%;
   }
 }
+@media (max-width: 380px) {
+  .gifts-section {
+    padding: 40px 0;
+  }
+}
 
 .health-block {
   display: flex;
@@ -790,12 +881,23 @@ p {
   align-items: center;
   flex-wrap: wrap;
 }
+@media (max-width: 380px) {
+  .health-block {
+    flex-direction: column;
+  }
+}
 
 .health-block-header {
   width: 226px;
   padding: 20px;
   color: #ffffff;
   text-align: center;
+}
+@media (max-width: 380px) {
+  .health-block-header {
+    width: 100%;
+    padding: 15px;
+  }
 }
 
 .gifts-content {
@@ -815,6 +917,13 @@ p {
     justify-content: center;
     gap: 10px;
     transition: transform 0.5s ease-in-out;
+  }
+}
+@media (max-width: 380px) {
+  .gifts-content {
+    grid-template-columns: 1fr;
+    gap: 15px;
+    padding: 0 10px;
   }
 }
 

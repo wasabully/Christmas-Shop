@@ -16,6 +16,9 @@
 		padding: 50px 15px;
 		flex-direction: column;
 	}
+	@media screen and (max-width: 380px) {
+		padding: 30px 10px;
+	}
 
 	.f-content {
 		display: flex;
@@ -35,6 +38,11 @@
 			padding: 20px;
 			max-width: 100%;
 		}
+		@media screen and (max-width: 380px) {
+			height: auto;
+			padding: 15px;
+			width: 100%;
+		}
 	}
 
 	.f-text {
@@ -51,6 +59,15 @@
 			font-size: 20px;
 			color: #ffe6e6;
 			font-style: italic;
+		}
+		@media screen and (max-width: 768px) {
+			width: 100%;
+			gap: 15px;
+		}
+
+		@media screen and (max-width: 380px) {
+			width: 100%;
+			height: auto;
 		}
 	}
 

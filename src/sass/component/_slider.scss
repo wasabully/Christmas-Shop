@@ -11,6 +11,9 @@
 	@media screen and (max-width: 768px) {
 		padding: 40px 20px;
 	}
+	@media screen and (max-width: 380px) {
+		padding: 30px 15px;
+	}
 }
 
 .slider-t {
@@ -20,6 +23,9 @@
 	text-align: center;
 	align-items: center;
 	gap: 10px;
+	@media screen and (max-width: 380px) {
+		gap: 5px;
+	}
 }
 
 .slider-text {
@@ -37,6 +43,9 @@
 	transition: transform 0.5s ease-in-out;
 	@media screen and (max-width: 768px) {
 		padding: 0;
+	}
+	@media screen and (max-width: 380px) {
+		padding: 0 5px;
 	}
 }
 

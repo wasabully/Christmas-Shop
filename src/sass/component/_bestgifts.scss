@@ -9,6 +9,9 @@
 	background-repeat: no-repeat;
 	background-color: $color-primary;
 	padding: 65px;
+	@media screen and (max-width: 380px) {
+		padding: 40px 40px;
+	}
 }
 
 .best-gifts-content {
@@ -23,7 +26,11 @@
 	@media screen and (max-width: 768px) {
 		flex-wrap: wrap;
 		justify-content: center;
-		gap: 15px;
+	}
+	@media screen and (max-width: 380px) {
+		flex-direction: column;
+		width: 100%;
+		padding: 0;
 	}
 }
 
