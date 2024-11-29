@@ -17,6 +17,12 @@
 		align-items: center;
 		gap: 15px;
 
+		@media screen and (max-width: 768px) {
+			flex-direction: column; /* Переводим карточки в колонку */
+			width: 100%; /* Растягиваем на всю ширину */
+			gap: 20px; /* Увеличиваем промежутки между карточками */
+		}
+
 		.footer-contact {
 			width: 417px;
 			display: flex;
@@ -28,6 +34,10 @@
 			border-radius: 10px;
 			text-align: center;
 			transition: background-color 0.3s ease;
+			@media screen and (max-width: 768px) {
+				width: 100%;
+				border-radius: 20px;
+			}
 
 			.footer-icon {
 				display: block;

@@ -8,21 +8,27 @@
 	background-position: center;
 	background-repeat: no-repeat;
 	background-color: $color-primary;
+	padding: 65px;
 }
 
 .best-gifts-content {
 	max-width: 1276px;
-	height: 342px;
+	height: auto;
 	margin: 0 auto;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
 	gap: 10px;
 	transition: transform 0.5s ease-in-out;
+	@media screen and (max-width: 768px) {
+		flex-wrap: wrap;
+		justify-content: center;
+		gap: 15px;
+	}
 }
 
 .card {
-	background-color: #ecf3f8;
+	background-color: $color-content-footer;
 	border-radius: 20px;
 	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 	flex: 1;
@@ -38,7 +44,7 @@
 
 	.card-text {
 		width: 310px;
-		height: 230px;
+		height: 130px;
 		border-radius: 20px;
 		display: flex;
 		flex-direction: column;

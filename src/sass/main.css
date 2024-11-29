@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import './normalize.css';
 .Header1 {
   font-family: "Montserrat", sans-serif;
@@ -566,17 +567,25 @@ p {
   background-position: center;
   background-repeat: no-repeat;
   background-color: #ff4646;
+  padding: 65px;
 }
 
 .best-gifts-content {
   max-width: 1276px;
-  height: 342px;
+  height: auto;
   margin: 0 auto;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   gap: 10px;
   transition: transform 0.5s ease-in-out;
+}
+@media screen and (max-width: 768px) {
+  .best-gifts-content {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
 }
 
 .card {
@@ -595,7 +604,7 @@ p {
 }
 .card .card-text {
   width: 310px;
-  height: 230px;
+  height: 130px;
   border-radius: 20px;
   display: flex;
   flex-direction: column;
@@ -634,6 +643,12 @@ p {
   align-items: center;
   text-align: center;
 }
+@media screen and (max-width: 768px) {
+  .f-section {
+    padding: 50px 15px;
+    flex-direction: column;
+  }
+}
 .f-section .f-content {
   display: flex;
   justify-content: center;
@@ -648,6 +663,12 @@ p {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+}
+@media screen and (max-width: 768px) {
+  .f-section .f-content {
+    padding: 20px;
+    max-width: 100%;
+  }
 }
 .f-section .f-text {
   display: flex;
@@ -706,6 +727,13 @@ p {
   align-items: center;
   gap: 15px;
 }
+@media screen and (max-width: 768px) {
+  .footer .footer-contacts {
+    flex-direction: column; /* Переводим карточки в колонку */
+    width: 100%; /* Растягиваем на всю ширину */
+    gap: 20px; /* Увеличиваем промежутки между карточками */
+  }
+}
 .footer .footer-contacts .footer-contact {
   width: 417px;
   display: flex;
@@ -717,6 +745,12 @@ p {
   border-radius: 10px;
   text-align: center;
   transition: background-color 0.3s ease;
+}
+@media screen and (max-width: 768px) {
+  .footer .footer-contacts .footer-contact {
+    width: 100%;
+    border-radius: 20px;
+  }
 }
 .footer .footer-contacts .footer-contact .footer-icon {
   display: block;
@@ -743,6 +777,12 @@ p {
   background-repeat: no-repeat;
   background-color: #ff4646;
 }
+@media (max-width: 768px) {
+  .gifts-section {
+    padding: 60px 0;
+    background-size: 100%;
+  }
+}
 
 .health-block {
   display: flex;
@@ -766,15 +806,34 @@ p {
   max-width: 1276px;
   margin: 0 auto;
 }
+@media (max-width: 768px) {
+  .gifts-content {
+    grid-template-columns: repeat(2, 1fr);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    transition: transform 0.5s ease-in-out;
+  }
+}
 
 .card-gifts {
   width: 310px;
-  background-color: #ffffff;
   border-radius: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
   overflow: hidden;
+  background-color: #ecf3f8;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+@media (max-width: 768px) {
+  .card-gifts {
+    width: 100%;
+    max-width: 310px;
+  }
 }
 .card-gifts .card-gifts-img {
   width: 310px;
