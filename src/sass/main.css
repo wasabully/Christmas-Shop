@@ -162,6 +162,53 @@
   transition: 0.5s ease-in-out;
 }
 
+.burger-menu {
+  display: none;
+  cursor: pointer;
+}
+.burger-menu .burger-icon {
+  width: 40px;
+  height: 40px;
+  background-image: url("../../../src/img/other/Burger.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    padding: 12px 20px;
+    justify-content: space-between;
+  }
+  .gift-container {
+    flex: 1;
+  }
+  .header-nav {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  .header-nav-active {
+    display: flex;
+  }
+  .header-nav-cont {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .burger-menu {
+    display: block;
+  }
+  .header-item {
+    width: 100%;
+    justify-content: flex-start;
+  }
+}
 .button {
   margin: 0 0 15px 0;
 }
@@ -300,6 +347,18 @@ p {
   font-style: normal;
 }
 
+@media screen and (max-width: 768px) {
+  .hero-section {
+    min-height: 480px;
+    padding: 20px;
+  }
+  .hero-container {
+    width: 100%;
+  }
+  .btn {
+    margin: 10px;
+  }
+}
 .about-section {
   background-image: url("../../../src/img/hero/bg-snow.png");
   background-size: cover;
@@ -309,8 +368,12 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 50px;
   margin: 0 auto;
+}
+@media screen and (max-width: 768px) {
+  .about-section {
+    padding: 10px;
+  }
 }
 
 .about-container {
@@ -320,14 +383,31 @@ p {
   background-color: #ffffff;
   border-radius: 20px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 1276px;
+}
+@media screen and (max-width: 768px) {
+  .about-container {
+    flex-direction: row;
+    gap: 20px;
+    overflow-x: auto;
+  }
 }
 
 .text-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 628px;
+  width: 50%;
   height: 528px;
+}
+@media screen and (max-width: 768px) {
+  .text-container {
+    width: 30%;
+    height: auto;
+    text-align: start;
+    padding: 40px;
+  }
 }
 
 .about-text {
@@ -346,14 +426,19 @@ p {
   justify-content: center;
   align-items: center;
   flex: 1;
-  width: 628px;
-  height: 528px;
+  width: 638px;
+  height: auto;
+  min-height: 528px;
   background-image: url("../../../src/img/about/santa.png");
-  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   border-radius: 20px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+@media screen and (max-width: 768px) {
+  .about-image {
+    width: 50%;
+    height: auto;
+  }
 }
 
 .slider-section {
@@ -364,6 +449,11 @@ p {
   background-repeat: no-repeat;
   background-color: #ff4646;
 }
+@media screen and (max-width: 768px) {
+  .slider-section {
+    padding: 40px 20px;
+  }
+}
 
 .slider-t {
   display: flex;
@@ -371,6 +461,7 @@ p {
   justify-content: center;
   text-align: center;
   align-items: center;
+  gap: 10px;
 }
 
 .slider-text {
@@ -386,6 +477,11 @@ p {
   overflow: hidden;
   transition: transform 0.5s ease-in-out;
 }
+@media screen and (max-width: 768px) {
+  .slider-content {
+    padding: 0;
+  }
+}
 
 .slider-gallery {
   max-width: 1260px;
@@ -397,6 +493,13 @@ p {
   gap: 0 25px;
   transition: transform 0.5s ease-in-out;
 }
+@media screen and (max-width: 768px) {
+  .slider-gallery {
+    flex-direction: row;
+    gap: 15px;
+    padding: 0px;
+  }
+}
 
 .gallery-item {
   display: flex;
@@ -404,6 +507,11 @@ p {
   text-align: center;
   align-items: center;
   gap: 25px;
+}
+@media screen and (max-width: 768px) {
+  .gallery-item {
+    gap: 10px;
+  }
 }
 
 .gallery-title {
@@ -425,6 +533,11 @@ p {
   justify-content: flex-end;
   gap: 20px;
   padding-right: 5.5%;
+}
+@media screen and (max-width: 768px) {
+  .slider-controls {
+    padding: 0px;
+  }
 }
 
 .control-btn {

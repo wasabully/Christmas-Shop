@@ -11,8 +11,11 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	padding: 50px;
 	margin: 0 auto;
+
+	@media screen and (max-width: 768px) {
+		padding: 10px;
+	}
 }
 
 .about-container {
@@ -22,12 +25,27 @@
 	background-color: $color-static-white;
 	border-radius: 20px;
 	box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+	width: 100%;
+	max-width: 1276px;
+
+	@media screen and (max-width: 768px) {
+		flex-direction: row;
+		gap: 20px;
+		overflow-x: auto;
+	}
 }
 
 .text-container {
 	@include center-content;
-	width: 628px;
+	width: 50%;
 	height: 528px;
+
+	@media screen and (max-width: 768px) {
+		width: 30%;
+		height: auto;
+		text-align: start;
+		padding: 40px;
+	}
 }
 
 .about-text {
@@ -46,12 +64,16 @@
 .about-image {
 	@include center-content;
 	flex: 1;
-	width: 628px;
-	height: 528px;
+	width: 638px;
+	height: auto;
+	min-height: 528px;
 	background-image: url('../../../src/img/about/santa.png');
-	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
 	border-radius: 20px;
-	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+
+	@media screen and (max-width: 768px) {
+		width: 50%;
+		height: auto;
+	}
 }

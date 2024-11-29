@@ -79,3 +79,18 @@
 	white-space: nowrap;
 	font-style: normal;
 }
+
+@media screen and (max-width: 768px) {
+	.hero-section {
+		min-height: 480px;
+		padding: 20px;
+	}
+
+	.hero-container {
+		width: 100%;
+	}
+
+	.btn {
+		margin: 10px;
+	}
+}
