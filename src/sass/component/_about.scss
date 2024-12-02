@@ -3,7 +3,7 @@
 @use '../base/typography';
 
 .about-section {
-	background-image: url('../../../src/img/hero/bg-snow.png');
+	background-image: url('../../src/img/hero/bg-snow.png');
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -80,7 +80,7 @@
 	width: 638px;
 	height: auto;
 	min-height: 528px;
-	background-image: url('../../../src/img/about/santa.png');
+	background-image: url('../../src/img/about/santa.png');
 	background-position: center;
 	background-repeat: no-repeat;
 	border-radius: 20px;
