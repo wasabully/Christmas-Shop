@@ -6,6 +6,7 @@
 	background-image: url('../../src/img/best-gifts/bg-garland.png');
 	background-repeat: no-repeat;
 	background-color: $color-primary;
+	border-radius: 20px 20px 0 0;
 	@media (max-width: 768px) {
 		padding: 60px 0;
 		background-size: 100%;

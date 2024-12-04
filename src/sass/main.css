@@ -949,6 +949,7 @@ p {
   background-image: url("../../src/img/best-gifts/bg-garland.png");
   background-repeat: no-repeat;
   background-color: #ff4646;
+  border-radius: 20px 20px 0 0;
 }
 @media (max-width: 768px) {
   .gifts-section {
