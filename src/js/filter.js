@@ -1,22 +1,23 @@
-const filterButtons = document.querySelectorAll('.filter-button');
+document.addEventListener('DOMContentLoaded', () => {
+	const filterButtons = document.querySelectorAll('.filter-button');
+	const cards = document.querySelectorAll('.card-gifts');
 
-const cards = document.querySelectorAll('.card-gifts');
+	filterButtons.forEach((button) => {
+		button.addEventListener('click', function (event) {
+			event.preventDefault();
 
-filterButtons.forEach((button) => {
-	button.addEventListener('click', function (event) {
-		event.preventDefault();
+			const category = button.getAttribute('data-category');
 
-		const category = button.getAttribute('data-category');
+			filterButtons.forEach((b) => b.classList.remove('active'));
+			button.classList.add('active');
 
-		filterButtons.forEach((b) => b.classList.remove('active'));
-		button.classList.add('active');
-
-		cards.forEach((card) => {
-			if (category === 'all' || card.classList.contains(category)) {
-				card.style.display = 'block';
-			} else {
-				card.style.display = 'none';
-			}
+			cards.forEach((card) => {
+				if (category === 'all' || card.classList.contains(category)) {
+					card.style.display = 'block';
+				} else {
+					card.style.display = 'none';
+				}
+			});
 		});
 	});
 });
